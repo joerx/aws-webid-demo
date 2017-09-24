@@ -1,17 +1,17 @@
 'use strict';
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const yargs = require('yargs');
-const shortid = require('shortid');
-const qs = require('querystring');
 const {URL} = require('url');
-const cookieParser = require('cookie-parser');
-const config = require('./configure');
-const request = require('request');
-const exhb = require('express-handlebars');
-const session = require('express-session');
 const AWS = require('aws-sdk');
+const bodyParser = require('body-parser');
+const config = require('./config');
+const cookieParser = require('cookie-parser');
+const exhb = require('express-handlebars');
+const express = require('express');
+const qs = require('querystring');
+const request = require('request');
+const session = require('express-session');
+const shortid = require('shortid');
+const yargs = require('yargs');
 
 /**
  * Panic! Something terrible happned. Print error to console and die.

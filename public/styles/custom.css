@@ -1,0 +1,10 @@
+body {
+    margin-top: 20px;
+}
+
+#output {
+    width: 400px;
+    height: 300px;
+    font-family: monospace;
+    background-color: #E6F2F8;
+}

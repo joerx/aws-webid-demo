@@ -1,0 +1,58 @@
+<div class="container">
+
+    <h1>AWS Web Authenticatio Demo</h1>
+
+    <div>
+
+        {{#if isAuthenticated}}
+        
+        <div>
+            <p>
+                <a id="s3listobjects" href="#">List Objects</a> | 
+                <a id="s3getobject" href="#">Get Object</a>
+            </p>
+        </div>
+
+        <div>
+            <textarea readonly id="output"></textarea>
+        </div>
+
+        {{else}}
+
+        <p>
+            <button type="button" class="btn btn-primary" id="login-with-google">
+                Login with Google
+            </button>
+        </p>
+
+        {{/if}}
+
+    </div>
+    
+    <div>
+        <h2>About this:</h2>
+
+        <p>What this demo does:</p>
+
+        <ul>
+            <li>Get a Google ID token using OpenID Connect</li>
+            <li>Obtain temporary AWS creds from STS using that ID token</li>
+            <li>Assume an IAM role granting S3 read access</li>
+            <li>Fetch the contents of an S3 bucket</li>
+        </ul>
+        <p>Notes:</p>
+        <ul>
+            <li>Uses a session cookie, tokens will be stored on the backend</li>
+            <li>To understand internals better, this demo is not using Amazon Cognito</li>
+        </ul>
+        <p>Related Reading:</p>
+        <ul>
+            <li><a href="https://developers.google.com/identity/protocols/OpenIDConnect">Google OpenId Connect</a></li>
+            <li><a href="https://web-identity-federation-playground.s3.amazonaws.com/index.html">AWS Web Identity Federation Playground</a></li>
+            <li><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html">About Identity Federation</a>
+        </ul>
+    </div>
+
+</div>
+
+<script src="/scripts/main.js"></script>

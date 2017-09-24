@@ -1,0 +1,19 @@
+{
+  "name": "aws-webid-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Joerg Henning <jhenning@fastmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.122.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "request": "^2.82.0",
+    "shortid": "^2.2.8",
+    "yargs": "^9.0.1"
+  }
+}
